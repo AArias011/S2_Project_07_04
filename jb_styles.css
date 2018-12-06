@@ -47,28 +47,43 @@ nav ul li {
 
 
 /* Article Styles */
- article {
+article {
     font-size: 20px;
     line-height: 25px;
-    padding-right: 220px;
+    padding-right: 20px;
     width: 70%;
     padding-left: 15px;
-    
+}
+
+#art1 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
 
 
 /* Aside Styles */
 aside {
-    margin-top: -70px;
-    margin-right: -270px;
     padding-left: 10px;
-    float: right;
+    padding-bottom: 6px;
     background: radial-gradient(white, rgb(96, 153, 222));
     border: 6px solid rgb(0, 0, 0);
     border-radius: 20px;
     width: 35%;
     float: right;
+}
+
+
+
+
+
+/* Section Styles */
+.sec1 {
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 
@@ -80,17 +95,47 @@ header img {
 }
 
 
-
+/* Footer Styles */
+footer {
+    padding: 8px;
+    color: ;
+    margin: 1px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+}
 
 /* =================================
    Mobile Styles: 0px to 480px
    =================================
 */
+@media screen and (max-width:480px) {
+    nav>ul {
+        display: none;
+    }
 
+    article>aside {
+        width: 250px;
+    }
 
+    section.sec1 {
+        display: none;
+    }
 
+    a#navicon {
+        display: block;
 
+    }
 
+    nav.horizontal ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul,
+    nav.horizontal ul:hover {
+        display: block;
+    }
+}
 
 /* =================================
    Tablet Styles: 481px and greater 
